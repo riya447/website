@@ -1,0 +1,17 @@
+sudo: false
+
+language: node_js
+node_js:
+  - 8
+
+script:
+  - make test-ci
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: yarn deploy
+  on:
+    branch: master
+
+cache: yarn

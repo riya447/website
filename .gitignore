@@ -1,0 +1,9 @@
+node_modules
+npm-debug.log
+yarn-error.log
+dist
+firebase-debug.log
+.envrc
+tmp
+tags
+.tern-port
